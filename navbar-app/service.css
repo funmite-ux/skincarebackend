@@ -1,0 +1,161 @@
+/*================ SERVICE HERO =================*/
+
+.service-hero{
+    height:50vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url(images/service-banner.jpg);
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    text-align:center;
+}
+
+.service-hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+/*================ SERVICES =================*/
+
+.services-page{
+    padding:20px 8%;
+}
+
+.services-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:80px;
+}
+
+.service-card{
+    background:#fff;
+    padding:40px 50px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+.service-card i{
+    font-size:45px;
+    color:#255c4a;
+    margin-bottom:20px;
+}
+
+.service-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+/*================ PROCESS =================*/
+
+.process{
+    padding:100px 8%;
+    background:#f8f8f8;
+}
+
+.process-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.process-box{
+    text-align:center;
+}
+
+.process-box h1{
+    width:70px;
+    height:70px;
+    background:#255c4a;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto 20px;
+}
+
+/*================ PRICING =================*/
+
+.pricing{
+    padding:100px 8%;
+}
+
+.pricing-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.price-card{
+    background:#fff;
+    text-align:center;
+    padding:80px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.price-card.active{
+    background:#255c4a;
+    color:#fff;
+}
+
+.price-card h1{
+    margin:20px 0;
+    font-size:50px;
+}
+
+.price-card p{
+    margin:15px 0;
+}
+
+/*================ CTA =================*/
+
+.appointment{
+    background:#255c4a;
+    color:#fff;
+    text-align:center;
+    padding:90px 8%;
+}
+
+.appointment h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.appointment p{
+    max-width:650px;
+    margin:0 auto 35px;
+    line-height:1.8;
+}
+@media(max-width:768px){
+
+.service-hero h1{
+    font-size:40px;
+}
+
+.services-page,
+.process,
+.pricing,
+.appointment{
+    padding:70px 20px;
+}
+
+.appointment h2{
+    font-size:30px;
+}
+
+.price-card{
+    padding:30px;
+}
+
+}
